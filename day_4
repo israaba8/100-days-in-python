@@ -1,0 +1,10 @@
+print('¿Estás preparado para la prueba del que se presentará hoy?; se que te gustan los videojuegos por lo que se te harán algunas preguntas sobre ellos')
+print("""
+""")
+ac= input('¿Cual es tu juego favorito de assassin´s creed?: ')
+persona_principal= input('¿Menciona algún persona de la saga: ')
+juego= input('¿Recuerdas que fue lo primero que haya hecho?: ')
+etapa= input('¿En que epoca se desarrolló ese videojuego?: ')
+print(""""
+""")
+print(f'{ac} se desarrolla en la etapa del {etapa}; en donde el personaje principal fue {persona_principal}, empezando la primera escena con {juego} ')
