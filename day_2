@@ -1,0 +1,6 @@
+name= input('¿Cual es tu nombre?: ')
+print(f' Hola {name}, bienvenido a mi primer programa')
+favorite_food= input('¿Cual es tu comida favorita?: ')
+favorite_music= input('¿Cual es tu musica favorita?: ')
+live= input('¿Donde vives?: ')
+print(f'{name} ahora que sabemos tus gustos; confirmanos que tu comida favorita es {favorite_food} y que tu musica favorita es {favorite_music} y que vives en {live}')
