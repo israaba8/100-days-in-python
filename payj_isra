@@ -111,4 +111,15 @@ EXPECTED OUTPUT
 -- -- |     104 |       52 |          0 |             0 |              0 |    1 |
 -- -- +---------+----------+------------+---------------+----------------+------+
 
--- -- */
+SELECT  U.user_id,
+        O.order_id,
+        IF(O.model = 'SAMSUNG', 1,0) as is_samsung,
+        count(P.order_id) as payment_time,
+        sum(P.amount) as payment_amount,
+        if(O.first_payment_due_time - payment_time <3, 1, 0) as FPD3
+FROM Users as U
+Left JOIN Orders as O
+ON U.user_id = O.user_id
+LEFT JOIN Payments as P
+ON O.order_id = P.order_id
+GROUP BY U.user_id, O.order_id, is_samsung, FPD3
