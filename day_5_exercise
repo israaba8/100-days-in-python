@@ -1,0 +1,11 @@
+drink = input("Do you prefer coffee or tea?")
+if drink == "coffee": ----- remember always put this "DOS PUNTOS" at the end of the "IF", otherwise, the result will give an error. 
+  print("Tea is better.")
+else: ---- the same here; remember always put this "DOS PUNTOS" at the end of the "IF", otherwise, the result will give an error. 
+  print("Excellent choice.") 
+
+NOTES: remember all letter, words and capital letters are sensitive so if you don't put the correct word of omit one of it, the result will be different. 
+
+example: 1. coffee vs 2. coffe
+
+This will make the result change. 
