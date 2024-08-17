@@ -1,0 +1,5 @@
+name = input('¿Quien eres?: ')
+if name == 'Aby':
+  print('Hola mi amor, espero te la estes pasando muy bien')
+else:
+  print('¿Tú quien eres y porque estas acá?:')
